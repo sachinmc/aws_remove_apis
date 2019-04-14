@@ -1,0 +1,22 @@
+{
+  "name": "aws_remove_apis",
+  "version": "1.0.0",
+  "description": "remove api gateways from aws (60sec intervals)",
+  "main": "remove_apis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinmc/aws_remove_apis.git"
+  },
+  "author": "Sachin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sachinmc/aws_remove_apis/issues"
+  },
+  "homepage": "https://github.com/sachinmc/aws_remove_apis#readme",
+  "dependencies": {
+    "aws-sdk": "^2.437.0"
+  }
+}
