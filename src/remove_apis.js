@@ -2,7 +2,7 @@ const AWS = require('aws-sdk');
 const { promisify } = require('util');
 const getRegion = require('./getRegion');
 AWS.config.apiVersion = 'latest';
-AWS.config.region = getRegion(); 
+AWS.config.region = getRegion();
 
 const apigw = new AWS.APIGateway();
 const asyncGetRestApis = promisify(apigw.getRestApis.bind(apigw));
@@ -15,7 +15,7 @@ const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
-(async() => {
+module.exports = async function removeApis () {
   data = await asyncGetRestApis();
   data.items.forEach((apis) => restApiIds.push(apis.id));
   for (let i = 0; i < restApiIds.length; i += 1) {
@@ -27,4 +27,4 @@ const sleep = (milliseconds) => {
       console.log(err);
     }
   }
-})();
+};
