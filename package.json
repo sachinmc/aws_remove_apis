@@ -1,5 +1,5 @@
 {
-  "name": "aws_remove_apis",
+  "name": "@sachinmc/aws_remove_apis",
   "version": "1.0.0",
   "description": "remove api gateways from aws (60sec intervals)",
   "main": "remove_apis.js",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/sachinmc/aws_remove_apis.git"
   },
   "author": "Sachin",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sachinmc/aws_remove_apis/issues"
   },
